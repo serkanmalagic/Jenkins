@@ -8,32 +8,19 @@
 import Foundation
 
 struct Constants {
-    
-    //The API's base URL
-    static let baseUrl = "https://jsonplaceholder.typicode.com"
-    
-    //The parameters (Queries) that we're gonna use
-    struct Parameters {
-        static let userId = "userId"
-    }
-    
-    //The header fields
-    enum HttpHeaderField: String {
-        case authentication = "Authorization"
-        case contentType = "Content-Type"
-        case acceptType = "Accept"
-        case acceptEncoding = "Accept-Encoding"
-    }
-    
-    //The content type (JSON)
-    enum ContentType: String {
-        case json = "application/json"
-    }
+    static let baseURL = "https://jsonplaceholder.typicode.com/"
 }
 
-enum ApiError: Error {
-    case forbidden              //Status code 403
-    case notFound               //Status code 404
-    case conflict               //Status code 409
-    case internalServerError    //Status code 500
+
+enum HTTPHeaderField: String {
+    case authentication = "Authorization"
+    case contentType = "Content-Type"
+    case acceptType = "Accept"
+    case acceptEncoding = "Accept-Encoding"
+}
+
+enum ContentType: String {
+    case json = "application/x-www-form-urlencoded; charset=utf-8"
+    case accept = "*/*"
+    case acceptEncoding = "gzip;q=1.0, compress;q=0.5"
 }

@@ -20,10 +20,9 @@
 		F852D2E0271A01450079CD39 /* JenkinsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2DF271A01450079CD39 /* JenkinsUITests.swift */; };
 		F852D2E2271A01450079CD39 /* JenkinsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2E1271A01450079CD39 /* JenkinsUITestsLaunchTests.swift */; };
 		F85397F9271CAF7000F48BC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85397F8271CAF7000F48BC8 /* Constants.swift */; };
-		F8A18B20271C772A0068A203 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A18B1F271C772A0068A203 /* ApiRequest.swift */; };
+		F88C347A271E27A5008ED048 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88C3479271E27A5008ED048 /* ApiRouter.swift */; };
 		F8A4B528271CE0BE00A5073F /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4B527271CE0BE00A5073F /* Story.swift */; };
-		F8A4B52A271CE0F000A5073F /* GetStoriesByUsernameRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4B529271CE0F000A5073F /* GetStoriesByUsernameRequest.swift */; };
-		F8A4B52D271CE28300A5073F /* NetworkApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4B52C271CE28300A5073F /* NetworkApiClient.swift */; };
+		F8A4B52D271CE28300A5073F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4B52C271CE28300A5073F /* NetworkClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +66,9 @@
 		F852D2DF271A01450079CD39 /* JenkinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsUITests.swift; sourceTree = "<group>"; };
 		F852D2E1271A01450079CD39 /* JenkinsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F85397F8271CAF7000F48BC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		F8A18B1F271C772A0068A203 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		F88C3479271E27A5008ED048 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		F8A4B527271CE0BE00A5073F /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
-		F8A4B529271CE0F000A5073F /* GetStoriesByUsernameRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStoriesByUsernameRequest.swift; sourceTree = "<group>"; };
-		F8A4B52C271CE28300A5073F /* NetworkApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiClient.swift; sourceTree = "<group>"; };
+		F8A4B52C271CE28300A5073F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,7 +149,6 @@
 			children = (
 				F8A4B52B271CE27400A5073F /* Network */,
 				F85397FB271CB00000F48BC8 /* Models */,
-				F8A18B1E271C770B0068A203 /* APIClient */,
 				F85397F6271CAF3300F48BC8 /* Application */,
 				F85397FC271CB0C000F48BC8 /* Controllers */,
 				F85397F7271CAF5900F48BC8 /* Resources */,
@@ -214,18 +211,9 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		F8A18B1E271C770B0068A203 /* APIClient */ = {
-			isa = PBXGroup;
-			children = (
-				F8A18B1F271C772A0068A203 /* ApiRequest.swift */,
-			);
-			path = APIClient;
-			sourceTree = "<group>";
-		};
 		F8A4B525271CE09200A5073F /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				F8A4B529271CE0F000A5073F /* GetStoriesByUsernameRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -241,7 +229,8 @@
 		F8A4B52B271CE27400A5073F /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				F8A4B52C271CE28300A5073F /* NetworkApiClient.swift */,
+				F8A4B52C271CE28300A5073F /* NetworkClient.swift */,
+				F88C3479271E27A5008ED048 /* ApiRouter.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -488,11 +477,10 @@
 				F8A4B528271CE0BE00A5073F /* Story.swift in Sources */,
 				F852D2C3271A01420079CD39 /* ViewController.swift in Sources */,
 				F852D2BF271A01420079CD39 /* AppDelegate.swift in Sources */,
-				F8A18B20271C772A0068A203 /* ApiRequest.swift in Sources */,
-				F8A4B52D271CE28300A5073F /* NetworkApiClient.swift in Sources */,
+				F8A4B52D271CE28300A5073F /* NetworkClient.swift in Sources */,
 				F852D2C1271A01420079CD39 /* SceneDelegate.swift in Sources */,
+				F88C347A271E27A5008ED048 /* ApiRouter.swift in Sources */,
 				F85397F9271CAF7000F48BC8 /* Constants.swift in Sources */,
-				F8A4B52A271CE0F000A5073F /* GetStoriesByUsernameRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

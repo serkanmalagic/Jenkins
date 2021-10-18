@@ -6,32 +6,31 @@
 //
 
 import UIKit
-
-typealias CompletionHandler =  (Bool, AnyObject?) -> Void
-
+import Alamofire
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            
-        fetchStoriesByUsername()
+        loadRequest()
         
     }
-
-
-    func fetchStoriesByUsername() {
-            let request = GetStoriesByUsernameRequest()
-           
-            NetworkApiClient().callApi(request: request) { (apiResponse) in
-                if apiResponse.success {
-                     print(apiResponse.data)
-                } else {
-                    print( apiResponse.message as AnyObject?)
-
-                }
+    
+    
+    func loadRequest() {
+        
+        NetworkClient.performRequest([MovieResponse].self, router: APIRouter.getPosts, success: { (result) in
+            
+            for item in result {
+                print(item.title)
             }
+            
+        }) { (error) in
+
+            print(error.localizedDescription)
         }
+        
+    }
 }
 

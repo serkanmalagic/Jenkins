@@ -7,9 +7,13 @@
 
 import Foundation
 
-class Story: Codable {
-    var userId: Int?
-    var id: Int?
-    var title: String?
-    var completed: Bool?
+
+struct MovieResponse: Codable {
+    let userID, id: Int
+    let title, body: String
+
+    enum CodingKeys: String, CodingKey {
+        case userID = "userId"
+        case id, title, body
+    }
 }
