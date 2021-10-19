@@ -16,7 +16,10 @@ struct NetworkClient {
     // object parameter is added here so the T generic param can infer the type
     // All objects must conform to "Decodable" protocol
     static func performRequest<T>(_ object: T.Type, router: APIRouter, success: @escaping onSuccess<T>, failure: @escaping onFailure) where T: Decodable{
-            AF.request(router).responseJSON { (response) in
+        AF.request(router)
+            .debugLog()
+            .responseJSON { (response) in
+                print(response)
                 do {
                     let Lists = try JSONDecoder().decode(T.self, from: response.data!)
                 
@@ -24,6 +27,6 @@ struct NetworkClient {
                 } catch let error{
                     failure(error)
                 }
-        }
+            }
     }
 }

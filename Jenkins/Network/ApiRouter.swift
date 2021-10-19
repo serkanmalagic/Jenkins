@@ -23,12 +23,15 @@ enum APIRouter: URLRequestConvertible {
     case getTodoLists
     case getPosts
     case addToDo(title: String, description: String)
-    
+    case getPost(id: String)
+
     var method: HTTPMethod {
         switch self {
         case .getTodoLists:
             return .get
         case .getPosts:
+            return .get
+        case .getPost(_):
             return .get
         case .addToDo(_, _):
             return .post
@@ -41,6 +44,8 @@ enum APIRouter: URLRequestConvertible {
             return "list.php"
         case .getPosts:
             return "posts"
+        case .getPost(let id):
+            return "posts/\(id)"
         case .addToDo(_, _):
             return "add.php"
         }
@@ -51,6 +56,8 @@ enum APIRouter: URLRequestConvertible {
         case .getTodoLists:
             return nil
         case .getPosts:
+            return nil
+        case .getPost:
             return nil
         case .addToDo(let title, let description):
             return ["title": title, "desc": description]
@@ -64,6 +71,8 @@ enum APIRouter: URLRequestConvertible {
             return false
         case .getPosts:
             return false
+        case .getPost:
+            return false
         default:
             return true
         }
@@ -75,6 +84,8 @@ enum APIRouter: URLRequestConvertible {
             return JSONEncoding.default
         case .getPosts:
             return JSONEncoding.default
+        case .getPost:
+                    return JSONEncoding.default
         default:
             return URLEncoding.default
 
@@ -85,6 +96,7 @@ enum APIRouter: URLRequestConvertible {
     func asURLRequest() throws -> URLRequest {
         let url = try Constants.baseURL.asURL().appendingPathComponent(path)
         
+        print(url)
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         
