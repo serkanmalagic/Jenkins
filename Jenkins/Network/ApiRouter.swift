@@ -24,6 +24,8 @@ enum APIRouter: URLRequestConvertible {
     case getPosts
     case addToDo(title: String, description: String)
     case getPost(id: String)
+    case getPostsComments(id : String)
+    case getUsers
 
     var method: HTTPMethod {
         switch self {
@@ -33,8 +35,12 @@ enum APIRouter: URLRequestConvertible {
             return .get
         case .getPost(_):
             return .get
+        case .getPostsComments(_):
+            return .get
         case .addToDo(_, _):
             return .post
+        case .getUsers:
+            return .get
         }
     }
     
@@ -46,8 +52,12 @@ enum APIRouter: URLRequestConvertible {
             return "posts"
         case .getPost(let id):
             return "posts/\(id)"
+        case .getPostsComments(let id):
+            return "posts/\(id)/comments"
         case .addToDo(_, _):
             return "add.php"
+        case .getUsers:
+            return "users"
         }
     }
     
@@ -59,8 +69,12 @@ enum APIRouter: URLRequestConvertible {
             return nil
         case .getPost:
             return nil
+        case .getPostsComments:
+            return nil
         case .addToDo(let title, let description):
             return ["title": title, "desc": description]
+        case .getUsers:
+            return nil
         }
     }
     
@@ -72,6 +86,10 @@ enum APIRouter: URLRequestConvertible {
         case .getPosts:
             return false
         case .getPost:
+            return false
+        case .getPostsComments:
+            return false
+        case .getUsers:
             return false
         default:
             return true
@@ -85,7 +103,11 @@ enum APIRouter: URLRequestConvertible {
         case .getPosts:
             return JSONEncoding.default
         case .getPost:
-                    return JSONEncoding.default
+            return JSONEncoding.default
+        case .getPostsComments:
+            return JSONEncoding.default
+        case .getUsers:
+            return JSONEncoding.default
         default:
             return URLEncoding.default
 

@@ -21,9 +21,9 @@ struct NetworkClient {
             .responseJSON { (response) in
                 print(response)
                 do {
-                    let Lists = try JSONDecoder().decode(T.self, from: response.data!)
+                    let data = try JSONDecoder().decode(T.self, from: response.data!)
                 
-                    success(Lists)
+                    success(data)
                 } catch let error{
                     failure(error)
                 }

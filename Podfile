@@ -8,6 +8,7 @@ target 'Jenkins' do
   # Pods for Jenkins
   pod 'Alamofire', '~> 5.4'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'SCLAlertView'
 
 
   target 'JenkinsTests' do

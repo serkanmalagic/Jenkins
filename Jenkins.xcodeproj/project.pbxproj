@@ -10,6 +10,7 @@
 		3CF65D49939B86701D961AA0 /* Pods_Jenkins_JenkinsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD49EEF22FF50CAA31F3D937 /* Pods_Jenkins_JenkinsUITests.framework */; };
 		9A4120F5C10C5E87FFCFAFB2 /* Pods_Jenkins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BE765860DE2468DD6771B7 /* Pods_Jenkins.framework */; };
 		D091B20C161A42EF8103393D /* Pods_JenkinsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE8795AA54CD1B606368753 /* Pods_JenkinsTests.framework */; };
+		F805BA2D2720B6DA00A5E1E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805BA2C2720B6DA00A5E1E0 /* User.swift */; };
 		F852D2BF271A01420079CD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2BE271A01420079CD39 /* AppDelegate.swift */; };
 		F852D2C1271A01420079CD39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2C0271A01420079CD39 /* SceneDelegate.swift */; };
 		F852D2C3271A01420079CD39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2C2271A01420079CD39 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 		F852D2E0271A01450079CD39 /* JenkinsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2DF271A01450079CD39 /* JenkinsUITests.swift */; };
 		F852D2E2271A01450079CD39 /* JenkinsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2E1271A01450079CD39 /* JenkinsUITestsLaunchTests.swift */; };
 		F85397F9271CAF7000F48BC8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85397F8271CAF7000F48BC8 /* Constants.swift */; };
+		F88B8F04271F3A1100E9E44B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88B8F03271F3A1000E9E44B /* Comment.swift */; };
 		F88C347A271E27A5008ED048 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88C3479271E27A5008ED048 /* ApiRouter.swift */; };
 		F8A4B528271CE0BE00A5073F /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4B527271CE0BE00A5073F /* Story.swift */; };
 		F8A4B52D271CE28300A5073F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4B52C271CE28300A5073F /* NetworkClient.swift */; };
@@ -53,6 +55,7 @@
 		D98832F8E6FF86D9F3E1EF6D /* Pods-Jenkins-JenkinsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenkins-JenkinsUITests.release.xcconfig"; path = "Target Support Files/Pods-Jenkins-JenkinsUITests/Pods-Jenkins-JenkinsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EEADD17E86AF41EDE631567E /* Pods-JenkinsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JenkinsTests.debug.xcconfig"; path = "Target Support Files/Pods-JenkinsTests/Pods-JenkinsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F1F9E7EEAAF9A5F697D1AF4A /* Pods-Jenkins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenkins.release.xcconfig"; path = "Target Support Files/Pods-Jenkins/Pods-Jenkins.release.xcconfig"; sourceTree = "<group>"; };
+		F805BA2C2720B6DA00A5E1E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F852D2BB271A01420079CD39 /* Jenkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jenkins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F852D2BE271A01420079CD39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F852D2C0271A01420079CD39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +70,7 @@
 		F852D2DF271A01450079CD39 /* JenkinsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsUITests.swift; sourceTree = "<group>"; };
 		F852D2E1271A01450079CD39 /* JenkinsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JenkinsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F85397F8271CAF7000F48BC8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F88B8F03271F3A1000E9E44B /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		F88C3479271E27A5008ED048 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		F8A4B527271CE0BE00A5073F /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		F8A4B52C271CE28300A5073F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
@@ -225,6 +229,8 @@
 			children = (
 				F8A4B527271CE0BE00A5073F /* Story.swift */,
 				F8B613CB271F0CB20036B571 /* Posts.swift */,
+				F88B8F03271F3A1000E9E44B /* Comment.swift */,
+				F805BA2C2720B6DA00A5E1E0 /* User.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -479,7 +485,9 @@
 			files = (
 				F8A4B528271CE0BE00A5073F /* Story.swift in Sources */,
 				F852D2C3271A01420079CD39 /* ViewController.swift in Sources */,
+				F88B8F04271F3A1100E9E44B /* Comment.swift in Sources */,
 				F852D2BF271A01420079CD39 /* AppDelegate.swift in Sources */,
+				F805BA2D2720B6DA00A5E1E0 /* User.swift in Sources */,
 				F8A4B52D271CE28300A5073F /* NetworkClient.swift in Sources */,
 				F852D2C1271A01420079CD39 /* SceneDelegate.swift in Sources */,
 				F88C347A271E27A5008ED048 /* ApiRouter.swift in Sources */,

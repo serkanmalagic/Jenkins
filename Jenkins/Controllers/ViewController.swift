@@ -7,6 +7,7 @@
 
 import UIKit
 import Alamofire
+import SCLAlertView
 
 class ViewController: UIViewController {
     
@@ -14,24 +15,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
        // loadPosts()
-        loadPost()
-
-        let a = APIRouter.getPost(id: "1")
-        
+       // loadPost()
+       // loadPostComments()
+        loadUsers()
     }
     
     
     func loadPosts() {
-        
         NetworkClient.performRequest([MovieResponse].self, router: APIRouter.getPost(id: "1"), success: { (result) in
-            
             for item in result {
                 print(item.title)
             }
         }) { (error) in
             print(error.localizedDescription)
         }
-        
     }
     
     func loadPost(){
@@ -40,8 +37,25 @@ class ViewController: UIViewController {
         } failure: { error in
             print(error.localizedDescription)
         }
+    }
+    
+    func loadPostComments(){
+        NetworkClient.performRequest([Comment].self, router: APIRouter.getPostsComments(id: "1")) { result in
+            print(result)
+        } failure: { error in
+            print(error.localizedDescription)
+        }
+    }
+    
+    func loadUsers(){
+        NetworkClient.performRequest([User].self, router: APIRouter.getUsers) { result in
+            print(result)
+        } failure: { error in
+            print(error.localizedDescription)
+        }
 
     }
+
 
 }
 
