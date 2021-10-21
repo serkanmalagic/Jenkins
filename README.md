@@ -13,3 +13,6 @@ xcodebuild \
   -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.0' \
   test
 ```
+
+## Description
+This app sends some http requests and make it with T type responses and completion.
