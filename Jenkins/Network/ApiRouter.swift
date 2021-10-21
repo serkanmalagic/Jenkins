@@ -118,7 +118,6 @@ enum APIRouter: URLRequestConvertible {
     func asURLRequest() throws -> URLRequest {
         let url = try Constants.baseURL.asURL().appendingPathComponent(path)
         
-        print(url)
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         

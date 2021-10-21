@@ -14,26 +14,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // loadPosts()
-       // loadPost()
+        //loadPosts()
+       loadPost()
        // loadPostComments()
-        loadUsers()
+       // loadUsers()
+
     }
     
     
-    func loadPosts() {
-        NetworkClient.performRequest([MovieResponse].self, router: APIRouter.getPost(id: "1"), success: { (result) in
-            for item in result {
-                print(item.title)
-            }
+    func loadPost() {
+        NetworkClient.performRequest(Post.self, router: APIRouter.getPost(id: "1"), success: { result in
+            print("loadPost çalıştı")
+            self.loadPosts()
         }) { (error) in
             print(error.localizedDescription)
         }
     }
     
-    func loadPost(){
-        NetworkClient.performRequest(Post.self, router: APIRouter.getPost(id: "1")) { result in
-            print(result)
+    func loadPosts(){
+        NetworkClient.performRequest([Post].self, router: APIRouter.getPosts) { result in
+            print("loadPosts çalıştı")
+            self.loadPostComments()
         } failure: { error in
             print(error.localizedDescription)
         }
@@ -41,7 +42,8 @@ class ViewController: UIViewController {
     
     func loadPostComments(){
         NetworkClient.performRequest([Comment].self, router: APIRouter.getPostsComments(id: "1")) { result in
-            print(result)
+            print("loadPostComments çalıştı")
+            self.loadUsers()
         } failure: { error in
             print(error.localizedDescription)
         }
@@ -49,7 +51,7 @@ class ViewController: UIViewController {
     
     func loadUsers(){
         NetworkClient.performRequest([User].self, router: APIRouter.getUsers) { result in
-            print(result)
+            print("loadUsers çalıştı")
         } failure: { error in
             print(error.localizedDescription)
         }

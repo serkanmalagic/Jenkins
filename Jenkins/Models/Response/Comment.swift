@@ -7,15 +7,12 @@
 
 import Foundation
 
-class Comment: Codable {
+struct Comment: Codable {
     let postID, id: Int
     let name, email, body: String
 
-    init(postID: Int, id: Int, name: String, email: String, body: String) {
-        self.postID = postID
-        self.id = id
-        self.name = name
-        self.email = email
-        self.body = body
+    enum CodingKeys: String, CodingKey {
+        case postID = "postId"
+        case id, name, email, body
     }
 }

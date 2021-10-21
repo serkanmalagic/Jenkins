@@ -25,7 +25,7 @@
 		F88C347A271E27A5008ED048 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88C3479271E27A5008ED048 /* ApiRouter.swift */; };
 		F8A4B528271CE0BE00A5073F /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4B527271CE0BE00A5073F /* Story.swift */; };
 		F8A4B52D271CE28300A5073F /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4B52C271CE28300A5073F /* NetworkClient.swift */; };
-		F8B613CC271F0CB20036B571 /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B613CB271F0CB20036B571 /* Posts.swift */; };
+		F8B613CC271F0CB20036B571 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B613CB271F0CB20036B571 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +74,7 @@
 		F88C3479271E27A5008ED048 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		F8A4B527271CE0BE00A5073F /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		F8A4B52C271CE28300A5073F /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		F8B613CB271F0CB20036B571 /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		F8B613CB271F0CB20036B571 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,7 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				F8A4B527271CE0BE00A5073F /* Story.swift */,
-				F8B613CB271F0CB20036B571 /* Posts.swift */,
+				F8B613CB271F0CB20036B571 /* Post.swift */,
 				F88B8F03271F3A1000E9E44B /* Comment.swift */,
 				F805BA2C2720B6DA00A5E1E0 /* User.swift */,
 			);
@@ -492,7 +492,7 @@
 				F852D2C1271A01420079CD39 /* SceneDelegate.swift in Sources */,
 				F88C347A271E27A5008ED048 /* ApiRouter.swift in Sources */,
 				F85397F9271CAF7000F48BC8 /* Constants.swift in Sources */,
-				F8B613CC271F0CB20036B571 /* Posts.swift in Sources */,
+				F8B613CC271F0CB20036B571 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
