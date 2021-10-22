@@ -15,4 +15,4 @@ xcodebuild \
 ```
 
 ## Description
-This app sends some http requests and make it with T type responses and completion.
+This app sends some http requests and make it with T type responses and completion. It includes Network layer, indicator, apiRouter, Models, Responses
