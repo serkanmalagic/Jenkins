@@ -9,8 +9,8 @@ target 'Jenkins' do
   pod 'Alamofire', '~> 5.4'
   pod 'SwiftyJSON', '~> 4.0'
   pod 'SCLAlertView'
-
-
+  pod 'NVActivityIndicatorView'
+  
   target 'JenkinsTests' do
     inherit! :search_paths
     # Pods for testing

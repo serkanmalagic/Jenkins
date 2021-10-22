@@ -23,16 +23,16 @@ class ViewController: UIViewController {
     
     
     func loadPost() {
-        NetworkClient.performRequest(Post.self, router: APIRouter.getPost(id: "1"), success: { result in
+        NetworkClient.performRequest(vc: self, object: Post.self, router: APIRouter.getPost(id: "1"), success: { result in
             print("loadPost çalıştı")
-            self.loadPosts()
+           // self.loadPosts()
         }) { (error) in
             print(error.localizedDescription)
         }
     }
     
     func loadPosts(){
-        NetworkClient.performRequest([Post].self, router: APIRouter.getPosts) { result in
+        NetworkClient.performRequest(vc: self, object:[Post].self, router: APIRouter.getPosts) { result in
             print("loadPosts çalıştı")
             self.loadPostComments()
         } failure: { error in
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
     }
     
     func loadPostComments(){
-        NetworkClient.performRequest([Comment].self, router: APIRouter.getPostsComments(id: "1")) { result in
+        NetworkClient.performRequest(vc: self, object:[Comment].self, router: APIRouter.getPostsComments(id: "1")) { result in
             print("loadPostComments çalıştı")
             self.loadUsers()
         } failure: { error in
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     }
     
     func loadUsers(){
-        NetworkClient.performRequest([User].self, router: APIRouter.getUsers) { result in
+        NetworkClient.performRequest(vc: self, object:[User].self, router: APIRouter.getUsers) { result in
             print("loadUsers çalıştı")
         } failure: { error in
             print(error.localizedDescription)
