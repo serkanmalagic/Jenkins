@@ -11,21 +11,24 @@ import SCLAlertView
 
 class ViewController: UIViewController {
     
+    var delegate : HomeViewControllerProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //loadPosts()
-       loadPost()
-       // loadPostComments()
-       // loadUsers()
-
+        //loadPost()
+        // loadPostComments()
+        // loadUsers()
+        
+        print(delegate?.getAnotherRequest())
     }
     
     
     func loadPost() {
         NetworkClient.performRequest(vc: self, object: Post.self, router: APIRouter.getPost(id: "1"), success: { result in
             print("loadPost çalıştı")
-           // self.loadPosts()
+            // self.loadPosts()
         }) { (error) in
             print(error.localizedDescription)
         }
@@ -55,9 +58,9 @@ class ViewController: UIViewController {
         } failure: { error in
             print(error.localizedDescription)
         }
-
+        
     }
-
-
+    
+    
 }
 
