@@ -21,14 +21,11 @@ class ViewController: UIViewController {
         // loadPostComments()
         // loadUsers()
         let timer = ParkBenchTimer()
-        print(delegate?.getAnotherRequest())
-        print(delegate?.getAnotherRequest())
-        print(delegate?.getAnotherRequest())
-        print(delegate?.getAnotherRequest())
-        print(delegate?.getAnotherRequest())
         print("The task took \(timer.stop()) seconds.")
     }
     @IBAction func pushVC(_ sender: Any) {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "HomeViewControllerSB") as? HomeViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
     }
     
     

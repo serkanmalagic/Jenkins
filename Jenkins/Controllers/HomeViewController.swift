@@ -11,26 +11,37 @@ protocol HomeViewControllerProtocol {
     func getAnotherRequest() -> String
 }
 
-//  Person serkan tarafından inherit edilmeye çalışılıyor fakat "final" bunu engeller
-final class Person{
-    
-    let name : String
-    
-    internal init(name: String) {
-        self.name = name
-    }
-}
-
-class Serkan: Person {
-    let id : UUID
-}
+////  Person serkan tarafından inherit edilmeye çalışılıyor fakat "final" bunu engeller
+//final class Person{
+//
+//    let name : String
+//
+//    internal init(name: String) {
+//        self.name = name
+//    }
+//}
+//
+//class Serkan: Person {
+//    let id : UUID
+//}
 class HomeViewController: UIViewController, HomeViewControllerProtocol {
     
+    //  Property observer olarak değer içerisine parametre alarak onunla ilgili işlemler yapabilir
+    var closureExample = {  ( text : String ) in
+        print("i got the variable. Variable is \(text)")
+    }
     
+    //  Property observer olarak değer içerisine parametre alarak onunla ilgili işlemler yapabilir
+    var score = 0 {
+        didSet{
+            print("updated value is \(score)")
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        score = 6
     }
     
     
