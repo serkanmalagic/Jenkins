@@ -11,6 +11,19 @@ protocol HomeViewControllerProtocol {
     func getAnotherRequest() -> String
 }
 
+//  Person serkan tarafından inherit edilmeye çalışılıyor fakat "final" bunu engeller
+final class Person{
+    
+    let name : String
+    
+    internal init(name: String) {
+        self.name = name
+    }
+}
+
+class Serkan: Person {
+    let id : UUID
+}
 class HomeViewController: UIViewController, HomeViewControllerProtocol {
     
     
@@ -18,7 +31,6 @@ class HomeViewController: UIViewController, HomeViewControllerProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
     
     
@@ -31,6 +43,5 @@ class HomeViewController: UIViewController, HomeViewControllerProtocol {
         
         return "lorem ipsum"
     }
-    
 
 }
