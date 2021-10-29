@@ -20,8 +20,15 @@ class ViewController: UIViewController {
         //loadPost()
         // loadPostComments()
         // loadUsers()
-        
+        let timer = ParkBenchTimer()
         print(delegate?.getAnotherRequest())
+        print(delegate?.getAnotherRequest())
+        print(delegate?.getAnotherRequest())
+        print(delegate?.getAnotherRequest())
+        print(delegate?.getAnotherRequest())
+        print("The task took \(timer.stop()) seconds.")
+    }
+    @IBAction func pushVC(_ sender: Any) {
     }
     
     

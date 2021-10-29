@@ -23,6 +23,7 @@ class HomeViewController: UIViewController, HomeViewControllerProtocol {
     
     
     func getAnotherRequest() -> String {
+        
         NetworkClient.performRequest(vc: self, object: Post.self, router: APIRouter.getPost(id: "1"), success: { result in
         }) { (error) in
             print(error.localizedDescription)
