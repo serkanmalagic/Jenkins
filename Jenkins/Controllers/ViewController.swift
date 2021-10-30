@@ -28,6 +28,10 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc!, animated: true)
     }
     
+    @IBAction func pushKeyVC(_ sender: Any) {
+        let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "KeychainViewControllerSB") as? KeychainViewController
+        self.navigationController?.pushViewController(vc!, animated: true)
+    }
     
     func loadPost() {
         NetworkClient.performRequest(vc: self, object: Post.self, router: APIRouter.getPost(id: "1"), success: { result in

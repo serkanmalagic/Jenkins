@@ -13,6 +13,7 @@
 		F805BA2D2720B6DA00A5E1E0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F805BA2C2720B6DA00A5E1E0 /* User.swift */; };
 		F81727E6272C949600EA1A0E /* KeyChainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81727E5272C949600EA1A0E /* KeyChainHelper.swift */; };
 		F823D5E1272213E10003888F /* AppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F823D5E0272213E10003888F /* AppAppearance.swift */; };
+		F844E4D0272CE9FB00518A3F /* KeychainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F844E4CF272CE9FB00518A3F /* KeychainViewController.swift */; };
 		F852D2BF271A01420079CD39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2BE271A01420079CD39 /* AppDelegate.swift */; };
 		F852D2C1271A01420079CD39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2C0271A01420079CD39 /* SceneDelegate.swift */; };
 		F852D2C3271A01420079CD39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F852D2C2271A01420079CD39 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		F805BA2C2720B6DA00A5E1E0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F81727E5272C949600EA1A0E /* KeyChainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainHelper.swift; sourceTree = "<group>"; };
 		F823D5E0272213E10003888F /* AppAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAppearance.swift; sourceTree = "<group>"; };
+		F844E4CF272CE9FB00518A3F /* KeychainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainViewController.swift; sourceTree = "<group>"; };
 		F852D2BB271A01420079CD39 /* Jenkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jenkins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F852D2BE271A01420079CD39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F852D2C0271A01420079CD39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			children = (
 				F852D2C2271A01420079CD39 /* ViewController.swift */,
 				F8F7063A27234F2100FFBCAF /* HomeViewController.swift */,
+				F844E4CF272CE9FB00518A3F /* KeychainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -521,6 +524,7 @@
 				F805BA2D2720B6DA00A5E1E0 /* User.swift in Sources */,
 				F8A4B52D271CE28300A5073F /* NetworkClient.swift in Sources */,
 				F852D2C1271A01420079CD39 /* SceneDelegate.swift in Sources */,
+				F844E4D0272CE9FB00518A3F /* KeychainViewController.swift in Sources */,
 				F88C347A271E27A5008ED048 /* ApiRouter.swift in Sources */,
 				F85397F9271CAF7000F48BC8 /* Constants.swift in Sources */,
 				F8F7063B27234F2100FFBCAF /* HomeViewController.swift in Sources */,

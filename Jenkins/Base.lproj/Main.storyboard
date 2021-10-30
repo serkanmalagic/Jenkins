@@ -19,9 +19,17 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkV-Wj-zJa">
                                 <rect key="frame" x="16" y="318" width="343" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="take me next"/>
+                                <buttonConfiguration key="configuration" style="filled" title="take me to closure and didSet "/>
                                 <connections>
                                     <action selector="pushVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FBD-Qc-EGe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtC-xx-npj">
+                                <rect key="frame" x="16" y="357" width="343" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="take me to keychain "/>
+                                <connections>
+                                    <action selector="pushKeyVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z99-3z-iSB"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -29,6 +37,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qkV-Wj-zJa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1JE-64-2bk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VtC-xx-npj" secondAttribute="trailing" constant="16" id="L74-7m-5mk"/>
+                            <constraint firstItem="VtC-xx-npj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OGy-XG-3XJ"/>
+                            <constraint firstItem="VtC-xx-npj" firstAttribute="top" secondItem="qkV-Wj-zJa" secondAttribute="bottom" constant="8" id="TV6-Cx-xPy"/>
                             <constraint firstItem="qkV-Wj-zJa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fXw-o9-0gV"/>
                             <constraint firstItem="qkV-Wj-zJa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jor-YU-NbD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qkV-Wj-zJa" secondAttribute="trailing" constant="16" id="seA-ch-N1V"/>
@@ -40,10 +51,53 @@
             </objects>
             <point key="canvasLocation" x="2848.8000000000002" y="53.523238380809602"/>
         </scene>
+        <!--Keychain View Controller-->
+        <scene sceneID="hNI-gv-UAG">
+            <objects>
+                <viewController storyboardIdentifier="KeychainViewControllerSB" id="3gJ-w0-TGf" customClass="KeychainViewController" customModule="Jenkins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ff0-bF-5b5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNg-ZQ-ZiZ">
+                                <rect key="frame" x="16" y="319" width="343" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add to keychain"/>
+                                <connections>
+                                    <action selector="addKeychain:" destination="3gJ-w0-TGf" eventType="touchUpInside" id="ciQ-ne-Fii"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4t-Ou-QPy">
+                                <rect key="frame" x="16" y="358" width="343" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="get from keychain"/>
+                                <connections>
+                                    <action selector="getKeychain:" destination="3gJ-w0-TGf" eventType="touchUpInside" id="2ez-or-1MJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter text what you want to save on keychain" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PKg-st-3Zl">
+                                <rect key="frame" x="16" y="277" width="343" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a3f-i3-GXi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="keyText" destination="PKg-st-3Zl" id="Awf-j1-lyJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNP-6e-c2G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2848.8000000000002" y="780.35982008995506"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="WMS-j2-Zim">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="en9-Ln-FPC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="HomeViewControllerSB" id="s90-xW-25W" customClass="HomeViewController" customModule="Jenkins" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="75N-OD-bEI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -64,6 +118,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="en9-Ln-FPC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3788" y="53.523238380809602"/>
         </scene>
