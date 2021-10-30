@@ -32,17 +32,31 @@
                                     <action selector="pushKeyVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z99-3z-iSB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUA-W6-Ro0">
+                                <rect key="frame" x="16" y="396" width="343" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="z7G-t3-0Xx"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="test override class"/>
+                                <connections>
+                                    <action selector="testOverride:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKE-J2-rdW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qkV-Wj-zJa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1JE-64-2bk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fUA-W6-Ro0" secondAttribute="trailing" constant="16" id="GHb-VV-jmH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VtC-xx-npj" secondAttribute="trailing" constant="16" id="L74-7m-5mk"/>
                             <constraint firstItem="VtC-xx-npj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="OGy-XG-3XJ"/>
                             <constraint firstItem="VtC-xx-npj" firstAttribute="top" secondItem="qkV-Wj-zJa" secondAttribute="bottom" constant="8" id="TV6-Cx-xPy"/>
                             <constraint firstItem="qkV-Wj-zJa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fXw-o9-0gV"/>
+                            <constraint firstItem="fUA-W6-Ro0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="irm-SX-Kik"/>
                             <constraint firstItem="qkV-Wj-zJa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jor-YU-NbD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qkV-Wj-zJa" secondAttribute="trailing" constant="16" id="seA-ch-N1V"/>
+                            <constraint firstItem="fUA-W6-Ro0" firstAttribute="top" secondItem="VtC-xx-npj" secondAttribute="bottom" constant="8" id="wHj-yo-6Wa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Main" id="Ohl-Ev-E2Z"/>

@@ -32,6 +32,30 @@ class ViewController: UIViewController {
         let vc = UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "KeychainViewControllerSB") as? KeychainViewController
         self.navigationController?.pushViewController(vc!, animated: true)
     }
+    @IBAction func testOverride(_ sender: Any) {
+        
+        class Car {
+            var numberOfDoors = 0
+            var description: String {
+                return "\(numberOfDoors) door(s)"
+            }
+        }
+        
+        let car = Car()
+        print("Car: \(car.description)")
+        
+        //  Bir üst initi baz alın ve üst sınıftaki değişkeni değiştirin.
+        class Bus: Car {
+            override init() {
+                super.init()
+                numberOfDoors = 4
+            }
+        }
+        
+        let bus = Bus()
+        print("Bus: \(bus.description)")
+        
+    }
     
     func loadPost() {
         NetworkClient.performRequest(vc: self, object: Post.self, router: APIRouter.getPost(id: "1"), success: { result in
