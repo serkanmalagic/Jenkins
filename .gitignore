@@ -1,73 +1,89 @@
 
-.DS_Store
-build/Jenkins.build/Release-iphoneos/Jenkins.build/all-product-headers.yaml
-build/Jenkins.build/Release-iphoneos/Jenkins.build/assetcatalog_dependencies
-build/Jenkins.build/Release-iphoneos/Jenkins.build/assetcatalog_generated_info.plist
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Base.lproj/LaunchScreen-SBPartialInfo.plist
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Base.lproj/LaunchScreen.storyboardc/Info.plist
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Base.lproj/Main-SBPartialInfo.plist
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Base.lproj/Main.storyboardc/Info.plist
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
-build/Jenkins.build/Release-iphoneos/Jenkins.build/DerivedSources/Entitlements.plist
-build/Jenkins.build/Release-iphoneos/Jenkins.build/DerivedSources/Jenkins-Swift.h
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Jenkins-all-non-framework-target-headers.hmap
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Jenkins-all-target-headers.hmap
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Jenkins-generated-files.hmap
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Jenkins-own-target-headers.hmap
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Jenkins-project-headers.hmap
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Jenkins.app.xcent
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Jenkins.hmap
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/AppDelegate.o
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/AppDelegate.stringsdata
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins-master.d
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins-master.dia
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins-master.swiftdeps
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins-OutputFileMap.json
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins-Swift.h
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins.LinkFileList
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins.swiftdoc
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins.SwiftFileList
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins.swiftmodule
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins.swiftsourceinfo
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/Jenkins_dependency_info.dat
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/SceneDelegate.o
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/SceneDelegate.stringsdata
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/ViewController.o
-build/Jenkins.build/Release-iphoneos/Jenkins.build/Objects-normal/arm64/ViewController.stringsdata
-build/Jenkins.build/Release-iphoneos/Jenkins.build/SwiftStdLibToolInputDependencies.dep
-build/Release-iphoneos/Jenkins.app.dSYM/Contents/Info.plist
-build/Release-iphoneos/Jenkins.app.dSYM/Contents/Resources/DWARF/Jenkins
-build/Release-iphoneos/Jenkins.app/_CodeSignature/CodeResources
-build/Release-iphoneos/Jenkins.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
-build/Release-iphoneos/Jenkins.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
-build/Release-iphoneos/Jenkins.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
-build/Release-iphoneos/Jenkins.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
-build/Release-iphoneos/Jenkins.app/Base.lproj/Main.storyboardc/Info.plist
-build/Release-iphoneos/Jenkins.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
-build/Release-iphoneos/Jenkins.app/embedded.mobileprovision
-build/Release-iphoneos/Jenkins.app/Info.plist
-build/Release-iphoneos/Jenkins.app/Jenkins
-build/Release-iphoneos/Jenkins.app/PkgInfo
-build/Release-iphoneos/Jenkins.swiftmodule/arm64-apple-ios.swiftdoc
-build/Release-iphoneos/Jenkins.swiftmodule/arm64-apple-ios.swiftmodule
-build/Release-iphoneos/Jenkins.swiftmodule/arm64.swiftdoc
-build/Release-iphoneos/Jenkins.swiftmodule/arm64.swiftmodule
-build/Release-iphoneos/Jenkins.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo
-build/Release-iphoneos/Jenkins.swiftmodule/Project/arm64.swiftsourceinfo
-build/XCBuildData/3f40357e7dda5fe684eb11ea79e0adc0-buildRequest.json
-build/XCBuildData/3f40357e7dda5fe684eb11ea79e0adc0-desc.xcbuild
-build/XCBuildData/3f40357e7dda5fe684eb11ea79e0adc0-manifest.xcbuild
-build/XCBuildData/3f40357e7dda5fe684eb11ea79e0adc0-targetGraph.txt
-build/XCBuildData/build.db
-build/XCBuildData/BuildDescriptionCacheIndex-1a57eb69136102ffb5603d7a9d9aa3f5
-Jenkins.xcodeproj/project.pbxproj
-Jenkins.xcodeproj/project.xcworkspace/xcuserdata/serkanmehmetmalagic.xcuserdatad/UserInterfaceState.xcuserstate
-Jenkins.xcodeproj/xcshareddata/xcschemes/Jenkins.xcscheme
-Jenkins.xcodeproj/xcshareddata/xcschemes/JenkinsTests.xcscheme
-Jenkins.xcodeproj/xcuserdata/serkanmehmetmalagic.xcuserdatad/xcschemes/xcschememanagement.plist
-Jenkins.xcworkspace/xcuserdata/serkanmehmetmalagic.xcuserdatad/UserInterfaceState.xcuserstate
-Jenkins.xcworkspace/xcuserdata/serkanmehmetmalagic.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
-pods
+# Created by https://www.toptal.com/developers/gitignore/api/swift
+# Edit at https://www.toptal.com/developers/gitignore?templates=swift
+
+### Swift ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
+*.xcscmblueprint
+*.xccheckout
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+
+## Obj-C/Swift specific
+*.hmap
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+# Package.resolved
+# *.xcodeproj
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+# .swiftpm
+
+.build/
+
+# CocoaPods
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+# Pods/
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+
+# Carthage
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build/
+
+# Accio dependency management
+Dependencies/
+.accio/
+
+# fastlane
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code Injection
+# After new code Injection tools there's a generated folder /iOSInjectionProject
+# https://github.com/johnno1962/injectionforxcode
+
+iOSInjectionProject/
+
+# End of https://www.toptal.com/developers/gitignore/api/swift
